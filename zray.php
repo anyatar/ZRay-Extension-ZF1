@@ -58,7 +58,7 @@ class ZF1 {
         // $storage['current_route'][] = array($_currentRoute);
         
         //  Request object with injected returning values to it
-        // ??? $storage['request'][] = array($context['returned']);
+        // $storage['request'] = array($context['returnValue']);
     }
     
 	////////////// PRIVATES ///////////////////

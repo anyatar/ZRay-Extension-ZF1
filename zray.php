@@ -160,6 +160,7 @@ $zf1Storage = new ZF1();
 // Allocate ZRayExtension for namespace "zf1"
 $zre = new \ZRayExtension("zf1");
 
+
 $zre->traceFunction("Zend_Controller_Dispatcher_Standard::dispatch",  function(){}, array($zf1Storage, 'storeDispatcherExit'));
 $zre->traceFunction("Zend_Controller_Front::dispatch", function(){}, array($zf1Storage, 'storeFrontDispatchExit'));
 $zre->traceFunction("Zend_View::_run",  function(){}, array($zf1Storage, 'storeViewExit'));
